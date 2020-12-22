@@ -34,5 +34,5 @@ We'd like a simple to use interface that makes it easy to:
 + Display a banner when the user has 5 nominations.
 
 
-## contributors
+## Contributors
 
