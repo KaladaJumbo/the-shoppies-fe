@@ -34,5 +34,22 @@ We'd like a simple to use interface that makes it easy to:
 + Display a banner when the user has 5 nominations.
 
 
-## Contributors
+### implementation 
+
+Initialized: create-react-app
+
+CSS framework: Material UI
+
+Hosted: -not hosted yet-
+
+Language: React - Javascript
+
+Testing*: Jest, React testing library
+
+
+*if implemented
+
+## Contributors:
+
+** None until after Sunday, January 17th, 2021. **
 
