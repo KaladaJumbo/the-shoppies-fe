@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import AppBar from "./components/appBar"
+import NavBar from "./components/NavBar"
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 
 import Container from "@material-ui/core/Container";
@@ -27,7 +27,7 @@ const App = props => {
   return (
     <div className="App">
       <Router>
-          <AppBar />
+          <NavBar />
           <Container  maxWidth="xl" className={classes.root}>
             <Switch>
               <Route exact path="/">
