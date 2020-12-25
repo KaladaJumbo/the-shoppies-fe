@@ -10,13 +10,16 @@ import Button from "@material-ui/core/Button"
 import { useHistory } from "react-router-dom";
 import { useState } from 'react';
 import Logo from "../images/shopLogo.png"
+import Dropdown from './dropdown';
+import { Grid } from '@material-ui/core';
 
 
 const useStyles = makeStyles((theme) => ({
     root:{
         backgroundColor: "#fbf7ed",
-        paddingRight: "5% + 9px",
-        paddingLeft: "calc(5% + 9px)",
+        paddingRight: "calc(4% + 9px)",
+        paddingLeft: "calc(4% + 9px)",
+        
     },
     title:{
         flexGrow: 1,
@@ -42,7 +45,11 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     logo: {
-        width: "12%"
+        width: "121px",
+        height: "35px",
+    },
+    logoGrid: {
+        marginRight: "3.5%"
     }
   
 }));
@@ -90,13 +97,22 @@ const NavBar = (props) => {
             <ElevationScroll {...props}>
                 <AppBar className={classes.root} >
                     <Toolbar className={classes.toolbar}>
-                            <a href="https://www.shopify.com/" style={{display: "inline-block", float: "left", padding: "0"}}>
-                                <img 
-                                className={classes.logo} 
-                                src={Logo}
-                                alt="shopify logo link home"
-                                href="shopify.com"/>
-                            </a>                                               
+                        <Grid container xs={12}>
+                            <Grid item xs={12} sm={6} md={2} lg={1} className={classes.logoGrid}>
+                                <a href="https://www.shopify.com/" style={{display: "inline-flex", padding: "0", width: "121px"}}>
+                                    <img 
+                                    className={classes.logo} 
+                                    src={Logo}
+                                    alt="shopify logo link home"
+                                    href="shopify.com"
+                                    />
+                                </a>
+                            </Grid>
+                            <Grid item>
+                                <Dropdown/>                                               
+                            </Grid>
+                        </Grid>
+                            
                     </Toolbar>
                 </AppBar>
             </ElevationScroll>
