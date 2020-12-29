@@ -50,6 +50,25 @@ const useStyles = makeStyles((theme) => ({
     },
     logoGrid: {
         marginRight: "3.5%"
+    },
+    dropdown: {
+        marginRight: "1%"
+    },
+    trial: {
+        marginLeft: "0",
+        marginRight: "0",
+        backgroundColor: "#008060",
+        textTransform: 'none',
+        fontWeight: "900",
+        color: "white",
+        "&:hover": {
+            backgroundColor: "#004c3f",
+        },
+    },
+    rightNavButtons: {
+        textTransform: 'none',
+        fontSize: "115%",
+        fontWeight: "500"
     }
   
 }));
@@ -108,9 +127,31 @@ const NavBar = (props) => {
                                     />
                                 </a>
                             </Grid>
-                            <Grid item>
-                                <Dropdown/>                                               
+                            <Grid item className={classes.dropdown}>
+                                <Dropdown name="Start" />                                               
                             </Grid>
+                            <Grid item className={classes.dropdown}>
+                                <Dropdown name="Sell" />                                               
+                            </Grid>
+                            <Grid item className={classes.dropdown}>
+                                <Dropdown name="Market" />                                               
+                            </Grid>
+                            <Grid item className={classes.dropdown} style={{marginRight: "26%"}}>
+                                <Dropdown name="Manage" />                                               
+                            </Grid>
+                            <Grid item className={classes.dropdown}>
+                                <Button className={classes.rightNavButtons}>Pricing</Button>                                               
+                            </Grid>
+                            <Grid item className={classes.dropdown}>
+                                <Dropdown name="Learn"/>                                               
+                            </Grid>
+                            <Grid item className={classes.dropdown} style={{marginRight:"2.5%"}}>
+                                <Button className={classes.rightNavButtons}>Log In</Button>                                               
+                            </Grid>
+                            <Grid item>
+                                <Button variant="contained" disableElevation className={classes.trial}>Start free trial</Button>                                               
+                            </Grid>
+                            
                         </Grid>
                             
                     </Toolbar>

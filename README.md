@@ -1,6 +1,6 @@
 # Intern Challenge - Summer 2021
 
-This is a personal project for shopify frontend internship. The details of the challenge are below. I will not be accepting pull requests till after the initial project is submitted on Sunday, January 17th, 2021. 
+This is a personal project for shopify frontend internship. The details of the challenge are below. I will not be accepting pull requests till after the initial project is submitted on Sunday, January 17th, 2021. I decided to make the site simillar to shopify website to show the ability to work on existing projects, or take an idea and add on to it.  
 
 If you would like to contribute or use this repo feel free. 
 

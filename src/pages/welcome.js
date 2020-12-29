@@ -30,8 +30,8 @@ const useStyles = makeStyles((theme) => ({
     leftText:{
         padding: "0",
         color: "#004c3f", 
-        fontSize: "3.125em",
-        fontWeight: "800"
+        fontSize: "3.4em",
+        fontWeight: "900"
     },
     secondSection: {
         backgroundColor: "#004c3f",
@@ -71,7 +71,7 @@ const Welcome = () => {
                 <Grid container xs={12} style={{padding: "0", margin: "0", overflow: "hidden", height: "100%"}}>
                     <Grid container item className={classes.left} xs={12} lg={6}>
                         <Typography className={classes.leftText}>
-                            Vote with us to find out the top 5 best quarintine movies
+                            Anyone, anywhere, can vote for the top 5 movies
                         </Typography>
                         <br/>
                         <Grid item xs={12} lg={8} style={{marginRight: "5%"}}>
@@ -110,7 +110,7 @@ const Welcome = () => {
                         
                     </Grid>
                     <Grid item className={classes.right} xs={12} lg={6} style={{padding: "0", margin: "0"}}>
-                        <img src={stock} alt="image of two women voting" style={{maxHeight: "100%", maxWidth: "100%", width: "100%", height: "100%"}}/>
+                        <img src={stock} alt="two women voting" style={{maxHeight: "100%", maxWidth: "100%", width: "100%", height: "100%"}}/>
                     </Grid>
                 </Grid>
 

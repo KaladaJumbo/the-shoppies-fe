@@ -4,10 +4,25 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import GetAppRoundedIcon from '@material-ui/icons/GetAppRounded'
 import Menu from '@material-ui/core/Menu'
 import Button from '@material-ui/core/Button'
+import { makeStyles } from '@material-ui/core/styles';
+
+
+const useStyles = makeStyles((theme) => ({
+    button: {
+        textTransform: 'none',
+        fontSize: "115%",
+        fontWeight: "500"
+    }
+  
+}));
+
+
 
 const Dropdown = props => {
-    const [anchorEl, setAnchorEl] = useState(null)
+    const classes = useStyles()
 
+    const [anchorEl, setAnchorEl] = useState(null)
+    
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget)
       }
@@ -23,6 +38,7 @@ const Dropdown = props => {
             aria-controls="simple-menu"
             aria-haspopup="true"
             onClick={handleClick}
+            className={classes.button}
             >
                 {props.name ? props.name : "default"}
             <ExpandMoreIcon/>
