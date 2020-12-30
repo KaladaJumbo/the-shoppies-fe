@@ -116,7 +116,7 @@ const NavBar = (props) => {
             <ElevationScroll {...props}>
                 <AppBar className={classes.root} >
                     <Toolbar className={classes.toolbar}>
-                        <Grid container xs={12}>
+                        <Grid container >
                             <Grid item xs={12} sm={6} md={2} lg={1} className={classes.logoGrid}>
                                 <a href="https://www.shopify.com/" style={{display: "inline-flex", padding: "0", width: "121px"}}>
                                     <img 
