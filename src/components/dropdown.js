@@ -35,16 +35,16 @@ const Dropdown = props => {
     return (
         <div>
             <Button
-            aria-controls="simple-menu"
+            aria-controls="dropdown menu"
             aria-haspopup="true"
             onClick={handleClick}
             className={classes.button}
             >
                 {props.name ? props.name : "default"}
-            <ExpandMoreIcon/>
+                <ExpandMoreIcon/>
             </Button>
             <Menu
-            id="simple-menu"
+            id="dropdown menu"
             getContentAnchorEl={null}
             anchorOrigin={{
             vertical: "bottom",

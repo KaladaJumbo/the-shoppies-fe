@@ -15,7 +15,9 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "#fbf7ed",
         height: "66.7vh",
         width: "100%",
-        paddingTop: "0"
+        paddingTop: "0",
+        overflow: "hidden",
+
     },
     right:{
         //top section grid right
@@ -36,12 +38,14 @@ const useStyles = makeStyles((theme) => ({
     },
     secondSection: {
         backgroundColor: "#004c3f",
-        height: "65vh",
-        width: "100%",
+        minHeight: "65vh",
+        minWidth: "100%",
+        overflowTop: "hidden"
     },
     focusedLabel: {
 
     },
+    
 }));
     
 const Welcome = () => {
@@ -58,7 +62,7 @@ const Welcome = () => {
                             </Typography>
                         </Grid>
                         <Grid  container item xs={12}>
-                            <Form/>
+                            <Form />
                         </Grid>
                     </Grid>
                     <Grid item className={classes.right} xs={12} lg={6} style={{padding: "0", margin: "0"}}>
@@ -67,7 +71,7 @@ const Welcome = () => {
                 </Grid>
             </div>
             <div className={classes.secondSection}>
-
+            
             </div>
         </div>
     )
