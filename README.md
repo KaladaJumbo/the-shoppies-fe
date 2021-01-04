@@ -44,10 +44,6 @@ Hosted: -not hosted yet-
 
 Language: React - Javascript
 
-Testing*: Jest, React testing library
-
-
-*if implemented
 
 ## Contributors:
 
